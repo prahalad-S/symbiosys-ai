@@ -4,72 +4,61 @@ const database = {
         "sectionTitle": "AI Tools",
         "items": [
             {
-                "name": "ChatGPT",
-                "badges": [
-                    "DOCS"
-                ],
-                "description": "OpenAI's conversational AI. Useful for code explanation, drafting documentation, brainstorming architectures, and quick debugging help.",
-                "url": "https://chatgpt.com/",
-                "tags": [
-                    "AI Tools"
-                ]
-            },
-            {
-                "name": "Claude",
-                "badges": [],
-                "description": "Anthropic's conversational model. Exceptional at complex reasoning, reading large codebases, writing tests, and architectural discussions.",
-                "url": "https://claude.ai/login",
-                "tags": [
-                    "AI Tools"
-                ]
-            },
-            {
-                "name": "v0 by Vercel",
-                "badges": [],
-                "description": "Generative UI system by Vercel. Generate production-ready React, Tailwind CSS, and Shadcn UI components from simple text prompts.",
-                "url": "https://v0.dev/",
-                "tags": [
-                    "AI Tools"
-                ]
-            },
-            {
-                "name": "Bolt.new",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "In-browser fullstack development agent. Prompt, run, edit, and deploy fullstack web applications directly in the browser using WebContainers.",
-                "url": "https://bolt.new/",
-                "tags": [
-                    "AI Tools"
-                ]
-            },
-            {
                 "name": "Cursor",
-                "badges": [],
-                "description": "An AI-first code editor built on VS Code. Features composer, tab completion, chat, and codebase indexing for powerful AI-assisted coding.",
+                "description": "An AI-first code editor built on VS Code. Features composer, tab completion, chat, and codebase indexing.",
                 "url": "https://www.cursor.com/",
+                "badges": [
+                    "NEW"
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
-                "name": "Windsurf",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "The first agentic IDE by Codeium. Powered by the 'Flow' state, it combines copilot capabilities with autonomous agents for a seamless AI coding experience.",
-                "url": "https://codeium.com/windsurf",
+                "name": "Claude Code",
+                "description": "Anthropic's command-line tool for Claude. Exceptional at complex reasoning, reading large codebases, and architectural discussions.",
+                "url": "https://claude.ai/",
+                "badges": [],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
-                "name": "Cline",
+                "name": "Lovable",
+                "description": "An AI development platform that builds full-stack web apps from text descriptions.",
+                "url": "https://lovable.dev/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "An open-source autonomous coding agent that runs in your VS Code terminal. Can edit files, run commands, and build entire features using various LLMs.",
-                "url": "https://cline.bot/",
+                "tags": [
+                    "AI Tools"
+                ]
+            },
+            {
+                "name": "Stitch",
+                "description": "An advanced AI-driven UI component generator and front-end copilot.",
+                "url": "https://stitch.dev/",
+                "badges": [],
+                "tags": [
+                    "AI Tools"
+                ]
+            },
+            {
+                "name": "Antigravity",
+                "description": "Google DeepMind's advanced agentic AI coding assistant.",
+                "url": "#",
+                "badges": [
+                    "NEW"
+                ],
+                "tags": [
+                    "AI Tools"
+                ]
+            },
+            {
+                "name": "Visual Studio Code",
+                "description": "Microsoft's lightweight but powerful source code editor, extensible via thousands of plugins including AI assistants.",
+                "url": "https://code.visualstudio.com/",
+                "badges": [],
                 "tags": [
                     "AI Tools"
                 ]
@@ -82,51 +71,49 @@ const database = {
         "items": [
             {
                 "name": "LangChain",
+                "description": "Framework for developing applications powered by language models.",
+                "url": "https://www.langchain.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Popular framework for building LLM-powered applications. Provides components, chains, agents, and integrations for orchestrating complex AI workflows.",
-                "url": "https://www.langchain.com/",
-                "tags": [
-                    "Frameworks & Agents"
-                ]
-            },
-            {
-                "name": "LlamaIndex",
-                "badges": [],
-                "description": "Data framework for connecting custom data sources to LLMs. Ideal for building RAG (Retrieval-Augmented Generation) applications and managing data pipelines.",
-                "url": "https://www.llamaindex.ai/",
-                "tags": [
-                    "Frameworks & Agents"
-                ]
-            },
-            {
-                "name": "CrewAI",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Framework for orchestrating role-playing autonomous AI agents. Define agents with specific roles, goals, and tools, and let them collaborate to solve complex tasks.",
-                "url": "https://www.crewai.com/",
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "LangGraph",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Library by LangChain for building stateful, multi-actor applications with LLMs. Perfect for creating agentic workflows with loops and complex decision graphs.",
+                "description": "Build stateful, multi-actor applications with LLMs.",
                 "url": "https://www.langchain.com/langgraph",
+                "badges": [],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
-                "name": "Autogen",
+                "name": "Hugging Face",
+                "description": "The AI community building the future. Build, train and deploy state of the art models powered by the reference open source in machine learning.",
+                "url": "https://huggingface.co/",
                 "badges": [],
-                "description": "Microsoft's framework for multi-agent conversation. Allows developers to build LLM applications using multiple agents that can converse with each other to solve tasks.",
-                "url": "https://microsoft.github.io/autogen/",
+                "tags": [
+                    "Frameworks & Agents"
+                ]
+            },
+            {
+                "name": "Vercel AI SDK",
+                "description": "The Vercel AI SDK is a library for building AI-powered streaming text and chat UIs.",
+                "url": "https://sdk.vercel.ai/",
+                "badges": [
+                    "DOCS"
+                ],
+                "tags": [
+                    "Frameworks & Agents"
+                ]
+            },
+            {
+                "name": "Azure AI Foundry",
+                "description": "Build, evaluate, and deploy generative AI solutions and custom copilots.",
+                "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-foundry",
+                "badges": [],
                 "tags": [
                     "Frameworks & Agents"
                 ]
@@ -134,67 +121,65 @@ const database = {
         ]
     },
     "mcp-tools": {
-        "title": "Model Context Protocol",
-        "sectionTitle": "Model Context Protocol",
+        "title": "Mcp Tools",
+        "sectionTitle": "Mcp Tools",
         "items": [
             {
                 "name": "Model Context Protocol",
+                "description": "An open standard by Anthropic that enables developers to build secure, two-way connections between AI models and their data sources/tools.",
+                "url": "https://modelcontextprotocol.io/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "An open standard by Anthropic that enables developers to build secure, two-way connections between AI models and their data sources/tools.",
-                "url": "https://modelcontextprotocol.io/introduction",
                 "tags": [
-                    "Model Context Protocol"
-                ]
-            },
-            {
-                "name": "MCP Servers Directory",
-                "badges": [],
-                "description": "A curated list of community-built Model Context Protocol (MCP) servers, helping you find tools to connect Claude/Cursor to databases, APIs, and local files.",
-                "url": "https://github.com/modelcontextprotocol/servers",
-                "tags": [
-                    "Model Context Protocol"
-                ]
-            },
-            {
-                "name": "Smithery",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "A registry for MCP servers. Easily discover, install, and manage Model Context Protocol servers to extend your AI assistant's capabilities.",
-                "url": "https://smithery.ai/",
-                "tags": [
-                    "Model Context Protocol"
-                ]
-            },
-            {
-                "name": "MCP Installer",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "A CLI tool to quickly install and configure MCP servers in Cursor, Claude Desktop, and other supported environments with a single command.",
-                "url": "https://github.com/smithery-ai/mcp-installer",
-                "tags": [
-                    "Model Context Protocol"
-                ]
-            },
-            {
-                "name": "Puppeteer MCP",
-                "badges": [],
-                "description": "An MCP server that gives AI models the ability to browse the web, take screenshots, click elements, and scrape content using Puppeteer.",
-                "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
-                "tags": [
-                    "Model Context Protocol"
+                    "Mcp Tools"
                 ]
             },
             {
                 "name": "Postgres MCP",
+                "description": "An MCP server that allows AI assistants to securely inspect schemas, run queries, and analyze data in PostgreSQL.",
+                "url": "https://github.com/modelcontextprotocol/servers",
                 "badges": [],
-                "description": "An MCP server that allows AI assistants to securely inspect schemas, run queries, and analyze data in PostgreSQL databases.",
-                "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
                 "tags": [
-                    "Model Context Protocol"
+                    "Mcp Tools"
+                ]
+            },
+            {
+                "name": "Power BI MCP",
+                "description": "An MCP server for connecting AI assistants to Microsoft Power BI datasets and reports.",
+                "url": "https://github.com/modelcontextprotocol/servers",
+                "badges": [],
+                "tags": [
+                    "Mcp Tools"
+                ]
+            },
+            {
+                "name": "GitHub MCP",
+                "description": "An MCP server to interact with GitHub repositories, issues, and pull requests.",
+                "url": "https://github.com/modelcontextprotocol/servers",
+                "badges": [],
+                "tags": [
+                    "Mcp Tools"
+                ]
+            },
+            {
+                "name": "Azure MCP",
+                "description": "An MCP server to interact with Microsoft Azure resources and APIs.",
+                "url": "https://github.com/modelcontextprotocol/servers",
+                "badges": [],
+                "tags": [
+                    "Mcp Tools"
+                ]
+            },
+            {
+                "name": "Composio",
+                "description": "A platform offering hundreds of production-ready MCP servers to connect AI agents with external tools and APIs.",
+                "url": "https://composio.dev/",
+                "badges": [
+                    "NEW"
+                ],
+                "tags": [
+                    "Mcp Tools"
                 ]
             }
         ]
@@ -204,52 +189,48 @@ const database = {
         "sectionTitle": "Data & Analytics",
         "items": [
             {
-                "name": "Supabase",
-                "badges": [
-                    "DOCS"
-                ],
-                "description": "The open-source Firebase alternative. Provides a Postgres database, authentication, instant APIs, Edge Functions, and real-time subscriptions.",
-                "url": "https://supabase.com/",
-                "tags": [
-                    "Data & Analytics"
-                ]
-            },
-            {
-                "name": "MongoDB Atlas",
-                "badges": [],
-                "description": "Fully-managed cloud database service for MongoDB. Flexible document model, built-in vector search for AI apps, and auto-scaling infrastructure.",
-                "url": "https://www.mongodb.com/products/platform/atlas-database",
-                "tags": [
-                    "Data & Analytics"
-                ]
-            },
-            {
-                "name": "Pinecone",
+                "name": "Microsoft Fabric",
+                "description": "An all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence.",
+                "url": "https://www.microsoft.com/en-us/microsoft-fabric",
                 "badges": [
                     "NEW"
                 ],
-                "description": "A fully managed vector database designed for high-performance AI applications. Ideal for storing and querying vector embeddings for RAG workflows.",
-                "url": "https://www.pinecone.io/",
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
-                "name": "Qdrant",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Open-source vector search engine and database written in Rust. Fast, scalable, and optimized for managing high-dimensional vector embeddings.",
-                "url": "https://qdrant.tech/",
-                "tags": [
-                    "Data & Analytics"
-                ]
-            },
-            {
-                "name": "Snowflake",
+                "name": "Cube.dev",
+                "description": "The universal semantic layer for building data apps. Organize data securely and deliver it to any application.",
+                "url": "https://cube.dev/",
                 "badges": [],
-                "description": "Cloud data platform for data warehousing, data lakes, and analytics. Enables secure sharing, data engineering, and running analytical workloads at scale.",
-                "url": "https://www.snowflake.com/en/",
+                "tags": [
+                    "Data & Analytics"
+                ]
+            },
+            {
+                "name": "Azure AI Search",
+                "description": "An AI-powered information retrieval platform that helps developers build rich search experiences and generative AI apps.",
+                "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-search",
+                "badges": [],
+                "tags": [
+                    "Data & Analytics"
+                ]
+            },
+            {
+                "name": "Power BI",
+                "description": "Interactive data visualization software product developed by Microsoft with primary focus on business intelligence.",
+                "url": "https://powerbi.microsoft.com/",
+                "badges": [],
+                "tags": [
+                    "Data & Analytics"
+                ]
+            },
+            {
+                "name": "Looker",
+                "description": "Enterprise platform for BI, data applications, and embedded analytics developed by Google Cloud.",
+                "url": "https://cloud.google.com/looker",
+                "badges": [],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -261,32 +242,30 @@ const database = {
         "sectionTitle": "Web Analytics",
         "items": [
             {
-                "name": "Google Analytics 4",
+                "name": "Microsoft Clarity",
+                "description": "A free user behavior analytics tool that helps you understand how users are interacting with your website through session replays and heatmaps.",
+                "url": "https://clarity.microsoft.com/",
+                "badges": [],
+                "tags": [
+                    "Web Analytics"
+                ]
+            },
+            {
+                "name": "Google Analytics",
+                "description": "Google's primary web and app analytics tool. Tracks user journeys, engagement, conversions, and provides machine-learning insights.",
+                "url": "https://analytics.google.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Google's primary web and app analytics tool. Tracks user journeys, engagement, conversions, and provides machine-learning insights.",
-                "url": "https://analytics.google.com/analytics/web/",
                 "tags": [
                     "Web Analytics"
                 ]
             },
             {
-                "name": "Mixpanel",
+                "name": "Google Tag Manager",
+                "description": "A tag management system that allows you to quickly and easily update measurement codes and related code fragments collectively known as tags on your website or mobile app.",
+                "url": "https://tagmanager.google.com/",
                 "badges": [],
-                "description": "Product analytics platform that helps teams analyze user behavior in real-time. Features funnel analysis, retention charts, and cohort segmentation.",
-                "url": "https://mixpanel.com/",
-                "tags": [
-                    "Web Analytics"
-                ]
-            },
-            {
-                "name": "PostHog",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Open-source product OS. Combines product analytics, session replays, feature flags, A/B testing, and surveys in a single platform.",
-                "url": "https://posthog.com/",
                 "tags": [
                     "Web Analytics"
                 ]
@@ -298,32 +277,30 @@ const database = {
         "sectionTitle": "Backend & Infra",
         "items": [
             {
-                "name": "Node.js",
+                "name": "n8n",
+                "description": "A free and open workflow automation tool. Easily build complex automations and connect anything to everything.",
+                "url": "https://n8n.io/",
+                "badges": [],
+                "tags": [
+                    "Backend & Infra"
+                ]
+            },
+            {
+                "name": "Supabase",
+                "description": "The open-source Firebase alternative. Provides a Postgres database, authentication, instant APIs, Edge Functions, and real-time subscriptions.",
+                "url": "https://supabase.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "JavaScript runtime built on Chrome's V8 engine. The foundation for modern web backend development, tooling, and package ecosystems (npm).",
-                "url": "https://nodejs.org/en",
                 "tags": [
                     "Backend & Infra"
                 ]
             },
             {
-                "name": "Bun",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "A fast, all-in-one JavaScript runtime, bundler, test runner, and package manager. Designed as a drop-in replacement for Node.js with native TypeScript support.",
-                "url": "https://bun.sh/",
-                "tags": [
-                    "Backend & Infra"
-                ]
-            },
-            {
-                "name": "Docker",
+                "name": "Firebase",
+                "description": "Google's mobile platform that helps you quickly develop high-quality apps and grow your business.",
+                "url": "https://firebase.google.com/",
                 "badges": [],
-                "description": "Platform for containerizing applications. Package apps with all their dependencies to ensure they run consistently across development, test, and production.",
-                "url": "https://www.docker.com/",
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -336,40 +313,40 @@ const database = {
         "items": [
             {
                 "name": "Vercel",
+                "description": "Cloud platform for frontend developers. Optimized for Next.js, providing instant deployments, global CDN, serverless functions, and analytics.",
+                "url": "https://vercel.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Cloud platform for frontend developers. Optimized for Next.js, providing instant deployments, global CDN, serverless functions, and analytics.",
-                "url": "https://vercel.com/",
-                "tags": [
-                    "Hosting & Domains"
-                ]
-            },
-            {
-                "name": "Netlify",
-                "badges": [],
-                "description": "Hosting and serverless platform for static sites and modern web apps. Git-based deployments, serverless functions, and forms integration.",
-                "url": "https://www.netlify.com/",
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Railway",
+                "description": "Infrastructure platform where you can provision databases, deploy servers, and manage fullstack applications with minimal configuration.",
+                "url": "https://railway.app/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "Infrastructure platform where you can provision databases, deploy servers, and manage fullstack applications with minimal configuration.",
-                "url": "https://railway.app/",
+                "tags": [
+                    "Hosting & Domains"
+                ]
+            },
+            {
+                "name": "Cloudflare",
+                "description": "Global network designed to make everything you connect to the Internet secure, private, fast, and reliable.",
+                "url": "https://www.cloudflare.com/",
+                "badges": [],
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Namecheap",
-                "badges": [],
                 "description": "Domain registrar and web hosting company. Provides domain registration, DNS management, SSL certificates, and affordable hosting options.",
                 "url": "https://www.namecheap.com/",
+                "badges": [],
                 "tags": [
                     "Hosting & Domains"
                 ]
@@ -381,23 +358,21 @@ const database = {
         "sectionTitle": "Web Scraping",
         "items": [
             {
-                "name": "Jina Reader",
+                "name": "Firecrawl",
+                "description": "Turn entire websites into clean markdown or structured data. Built specifically for LLM applications to scrape and crawl pages with ease.",
+                "url": "https://www.firecrawl.dev/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "A search-to-markdown tool designed for LLMs. Convert any web URL into clean, LLM-friendly markdown content for RAG or scraping pipelines.",
-                "url": "https://jina.ai/reader/",
                 "tags": [
                     "Web Scraping"
                 ]
             },
             {
-                "name": "Firecrawl",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Turn entire websites into clean markdown or structured data. Built specifically for LLM applications to scrape and crawl pages with ease.",
-                "url": "https://www.firecrawl.dev/",
+                "name": "Apify",
+                "description": "A platform for web scraping and data extraction. Easily create web scrapers to extract data from any website.",
+                "url": "https://apify.com/",
+                "badges": [],
                 "tags": [
                     "Web Scraping"
                 ]
@@ -409,21 +384,21 @@ const database = {
         "sectionTitle": "ERP & Business",
         "items": [
             {
-                "name": "Odoo",
-                "badges": [
-                    "DOCS"
-                ],
-                "description": "Open-source suite of business apps. Covers CRM, eCommerce, billing, accounting, manufacturing, warehouse, and project management.",
-                "url": "https://www.odoo.com/",
+                "name": "Frappe / ERPNext",
+                "description": "Free and open-source integrated Enterprise Resource Planning (ERP) software. Built on the Frappe framework.",
+                "url": "https://erpnext.com/",
+                "badges": [],
                 "tags": [
                     "ERP & Business"
                 ]
             },
             {
-                "name": "ERPNext",
-                "badges": [],
-                "description": "Free and open-source integrated Enterprise Resource Planning (ERP) software. Built on the Frappe framework, covers all major business modules.",
-                "url": "https://erpnext.com/",
+                "name": "Odoo",
+                "description": "Open-source suite of business apps. Covers CRM, eCommerce, billing, accounting, manufacturing, warehouse, and project management.",
+                "url": "https://www.odoo.com/",
+                "badges": [
+                    "DOCS"
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
@@ -436,11 +411,11 @@ const database = {
         "items": [
             {
                 "name": "Stripe",
+                "description": "Financial infrastructure for the internet. Payment processing, subscription billing, fraud prevention, and global payout APIs.",
+                "url": "https://stripe.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Financial infrastructure for the internet. Payment processing, subscription billing, fraud prevention, and global payout APIs.",
-                "url": "https://stripe.com/gb",
                 "tags": [
                     "Payments"
                 ]
@@ -452,50 +427,48 @@ const database = {
         "sectionTitle": "Azure",
         "items": [
             {
-                "name": "Azure Portal",
+                "name": "Azure App Service",
+                "description": "A fully managed platform for building, deploying, and scaling web apps.",
+                "url": "https://azure.microsoft.com/en-us/products/app-service",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Microsoft Azure's web console. Build, manage, and monitor everything from simple web apps to complex cloud databases and AI infrastructure.",
-                "url": "https://azure.microsoft.com/en-gb/features/azure-portal/",
-                "tags": [
-                    "Azure"
-                ]
-            },
-            {
-                "name": "Azure Static Web Apps",
-                "badges": [],
-                "description": "Service that automatically builds and deploys full stack web apps to Azure from a code repository. Global hosting, integrated API, and routing.",
-                "url": "https://azure.microsoft.com/en-gb/products/app-service/static/",
-                "tags": [
-                    "Azure"
-                ]
-            },
-            {
-                "name": "Azure Container Apps",
-                "badges": [
-                    "NEW"
-                ],
-                "description": "Fully managed serverless container service. Run microservices and containerized applications without managing complex Kubernetes infrastructure.",
-                "url": "https://azure.microsoft.com/en-gb/products/container-apps/",
                 "tags": [
                     "Azure"
                 ]
             },
             {
                 "name": "Azure Key Vault",
+                "description": "Cloud service for securely storing and accessing secrets, keys, and certificates.",
+                "url": "https://azure.microsoft.com/en-us/products/key-vault",
                 "badges": [],
-                "description": "Cloud service for securely storing and accessing secrets, keys, and certificates. Centralized management of application secrets and encryption.",
-                "url": "https://azure.microsoft.com/en-gb/products/key-vault/",
                 "tags": [
                     "Azure"
                 ]
             },
             {
-                "name": "Azure Cosmos DB",
+                "name": "Azure Data Factory",
+                "description": "Cloud-based data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.",
+                "url": "https://azure.microsoft.com/en-us/products/data-factory",
                 "badges": [],
-                "description": "Fully managed, globally distributed NoSQL database. Single-digit millisecond response times, automatic scaling, and multi-model API support.",
-                "url": "https://azure.microsoft.com/en-gb/products/cosmos-db/",
+                "tags": [
+                    "Azure"
+                ]
+            },
+            {
+                "name": "Azure API Management",
+                "description": "A hybrid, multicloud management platform for APIs across all environments.",
+                "url": "https://azure.microsoft.com/en-us/products/api-management",
+                "badges": [],
+                "tags": [
+                    "Azure"
+                ]
+            },
+            {
+                "name": "Microsoft Entra External ID",
+                "description": "A highly customizable customer identity and access management (CIAM) solution.",
+                "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-external-id",
+                "badges": [],
                 "tags": [
                     "Azure"
                 ]
@@ -507,48 +480,48 @@ const database = {
         "sectionTitle": "AWS",
         "items": [
             {
-                "name": "AWS Console",
+                "name": "AWS EC2",
+                "description": "Secure and resizable compute capacity for virtually any workload.",
+                "url": "https://aws.amazon.com/ec2/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Amazon Web Services management console. Access and manage AWS services, configure resources, and monitor costs and billing.",
-                "url": "https://aws.amazon.com/console/",
-                "tags": [
-                    "AWS"
-                ]
-            },
-            {
-                "name": "AWS Amplify",
-                "badges": [],
-                "description": "Set of tools and services to build and deploy fullstack web and mobile apps on AWS. Easy backend configuration, hosting, and UI components.",
-                "url": "https://aws.amazon.com/amplify/",
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "AWS Lambda",
-                "badges": [],
-                "description": "Serverless compute service that runs your code in response to events. Automatically manages the underlying compute resources for you.",
+                "description": "Run code without thinking about servers or clusters.",
                 "url": "https://aws.amazon.com/lambda/",
+                "badges": [],
                 "tags": [
                     "AWS"
                 ]
             },
             {
-                "name": "AWS Cognito",
+                "name": "AWS S3",
+                "description": "Object storage built to retrieve any amount of data from anywhere.",
+                "url": "https://aws.amazon.com/s3/",
                 "badges": [],
-                "description": "Customer identity and access management (CIAM) service. Add user sign-up, sign-in, and access control to your web and mobile apps.",
-                "url": "https://aws.amazon.com/cognito/",
                 "tags": [
                     "AWS"
                 ]
             },
             {
-                "name": "Amazon DynamoDB",
+                "name": "AWS Glue",
+                "description": "A serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.",
+                "url": "https://aws.amazon.com/glue/",
                 "badges": [],
-                "description": "Fully managed, serverless, key-value NoSQL database designed to run high-performance applications at any scale. Consistent sub-10ms latency.",
-                "url": "https://aws.amazon.com/dynamodb/",
+                "tags": [
+                    "AWS"
+                ]
+            },
+            {
+                "name": "AWS Athena",
+                "description": "A serverless, interactive analytics service to query data and analyze big data in Amazon S3 using standard SQL.",
+                "url": "https://aws.amazon.com/athena/",
+                "badges": [],
                 "tags": [
                     "AWS"
                 ]
@@ -560,56 +533,62 @@ const database = {
         "sectionTitle": "React",
         "items": [
             {
-                "name": "React Router",
+                "name": "React",
+                "description": "The library for web and native user interfaces.",
+                "url": "https://react.dev/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "The standard routing library for React. Enables dynamic, client-side routing, nested layouts, and robust data loading/mutations (v7).",
-                "url": "https://reactrouter.com/",
                 "tags": [
                     "React"
                 ]
             },
             {
-                "name": "Shadcn UI",
+                "name": "Next.js",
+                "description": "The React Framework for the Web. Enables you to create high-quality web applications with the power of React components.",
+                "url": "https://nextjs.org/",
                 "badges": [
-                    "NEW"
+                    "DOCS"
                 ],
-                "description": "Beautifully designed components that you can copy and paste into your apps. Accessible, customizable, and built on Radix Primitives and Tailwind CSS.",
-                "url": "https://ui.shadcn.com/",
                 "tags": [
                     "React"
                 ]
-            },
+            }
+        ]
+    },
+    "mobile-frameworks": {
+        "title": "Frameworks",
+        "sectionTitle": "Frameworks",
+        "items": [
             {
                 "name": "React Native",
+                "description": "Build native iOS and Android apps using React and JavaScript. Write once, run everywhere with native performance.",
+                "url": "https://reactnative.dev/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "Build native iOS and Android apps using React and JavaScript. Write once, run everywhere with native performance and UI rendering.",
-                "url": "https://reactnative.dev/",
                 "tags": [
-                    "React"
+                    "Frameworks"
                 ]
             },
             {
                 "name": "Expo",
+                "description": "An open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.",
+                "url": "https://expo.dev/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "An open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React. Simplifies development and deployment.",
-                "url": "https://expo.dev/",
                 "tags": [
-                    "React"
+                    "Frameworks"
                 ]
             },
             {
                 "name": "Flutter",
-                "badges": [],
-                "description": "Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices from a single codebase.",
+                "description": "Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices.",
                 "url": "https://flutter.dev/",
+                "badges": [],
                 "tags": [
-                    "React"
+                    "Frameworks"
                 ]
             }
         ]
@@ -620,38 +599,38 @@ const database = {
         "items": [
             {
                 "name": "Codemagic",
+                "description": "CI/CD built specifically for mobile. Automated builds, code signing, and distribution for React Native, Flutter, and native iOS/Android apps.",
+                "url": "https://codemagic.io/start/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "CI/CD built specifically for mobile. Automated builds, code signing, and distribution for React Native, Flutter, and native iOS/Android apps.",
-                "url": "https://codemagic.io/start/",
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "TestFlight",
-                "badges": [],
-                "description": "Apple's official platform for distributing iOS beta builds to testers. Up to 10,000 external testers per app, integrated with App Store Connect.",
+                "description": "Apple's official platform for distributing iOS beta builds to testers.",
                 "url": "https://developer.apple.com/testflight/",
+                "badges": [],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "Firebase App Distribution",
-                "badges": [],
-                "description": "Distribute pre-release iOS and Android builds to testers in seconds. Free, works alongside TestFlight, and integrates with Fastlane and CI pipelines.",
+                "description": "Distribute pre-release iOS and Android builds to testers in seconds.",
                 "url": "https://firebase.google.com/products/app-distribution",
+                "badges": [],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "Google Play",
-                "badges": [],
-                "description": "Android app distribution via the Play Store. Internal/closed/open testing tracks let you roll out gradually and collect structured feedback before launch.",
+                "description": "Android app distribution via the Play Store. Internal/closed/open testing tracks.",
                 "url": "https://play.google.com/console/signup",
+                "badges": [],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
@@ -664,20 +643,20 @@ const database = {
         "items": [
             {
                 "name": "GitHub",
+                "description": "The standard for source control. Pull requests, code review, Issues, Projects, and GitHub Actions.",
+                "url": "https://github.com/",
                 "badges": [
                     "DOCS"
                 ],
-                "description": "The standard for source control. Pull requests, code review, Issues, Projects, and GitHub Actions for CI/CD pipelines \u2014 all in one place.",
-                "url": "https://github.com/",
                 "tags": [
                     "Source Control"
                 ]
             },
             {
                 "name": "Azure DevOps",
+                "description": "Microsoft's DevOps platform with Repos (Git), Pipelines (CI/CD), Boards (work tracking), and Artifacts.",
+                "url": "https://azure.microsoft.com/en-gb/products/devops/",
                 "badges": [],
-                "description": "Microsoft's DevOps platform with Repos (Git), Pipelines (CI/CD), Boards (work tracking), and Artifacts. Integrates tightly with the Azure ecosystem.",
-                "url": "https://azure.microsoft.com/en-gb/products/devops/?nav=min",
                 "tags": [
                     "Source Control"
                 ]
@@ -690,29 +669,29 @@ const database = {
         "items": [
             {
                 "name": "Terraform",
-                "badges": [],
-                "description": "Industry-standard IaC tool by HashiCorp. Provision and manage cloud infrastructure across AWS, Azure, GCP, and more using declarative HCL configuration.",
+                "description": "Industry-standard IaC tool by HashiCorp. Provision and manage cloud infrastructure across AWS, Azure, GCP.",
                 "url": "https://developer.hashicorp.com/terraform",
+                "badges": [],
                 "tags": [
                     "Infrastructure as Code"
                 ]
             },
             {
                 "name": "Azure Bicep",
-                "badges": [],
-                "description": "Microsoft's DSL for deploying Azure resources. A cleaner alternative to ARM templates \u2014 concise syntax, type safety, and native Azure tooling support.",
+                "description": "Microsoft's DSL for deploying Azure resources. A cleaner alternative to ARM templates.",
                 "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/",
+                "badges": [],
                 "tags": [
                     "Infrastructure as Code"
                 ]
             },
             {
                 "name": "Azure AZD",
+                "description": "Azure Developer CLI \u2014 scaffold, provision, and deploy full Azure applications in one command.",
+                "url": "https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "Azure Developer CLI \u2014 scaffold, provision, and deploy full Azure applications in one command. Templates for common architectures, CI/CD pipelines included.",
-                "url": "https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/",
                 "tags": [
                     "Infrastructure as Code"
                 ]
@@ -725,11 +704,11 @@ const database = {
         "items": [
             {
                 "name": "Playwright",
+                "description": "Microsoft's end-to-end testing framework for web apps. Supports Chromium, Firefox, and WebKit.",
+                "url": "https://playwright.dev/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "Microsoft's end-to-end testing framework for web apps. Supports Chromium, Firefox, and WebKit. Auto-waits, trace viewer, and codegen make it the modern standard for browser automation and testing.",
-                "url": "https://playwright.dev/",
                 "tags": [
                     "Testing"
                 ]
@@ -742,36 +721,36 @@ const database = {
         "items": [
             {
                 "name": "Figma",
-                "badges": [],
-                "description": "The standard for UI/UX design. Collaborative, browser-based, and packed with plugins. Has an official MCP server for AI-assisted design workflows.",
+                "description": "The standard for UI/UX design. Collaborative, browser-based, and packed with plugins.",
                 "url": "https://www.figma.com/",
+                "badges": [],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "Canva",
-                "badges": [],
-                "description": "Easy-to-use design platform for marketing materials, presentations, social media, and more. Huge template library with AI-powered design tools built in.",
+                "description": "Easy-to-use design platform for marketing materials, presentations, social media, and more.",
                 "url": "https://www.canva.com/",
+                "badges": [],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "FigJam",
-                "badges": [],
-                "description": "Figma's online whiteboard for brainstorming, diagramming, and workshops. Sticky notes, flowcharts, and real-time collaboration \u2014 great for planning sessions.",
+                "description": "Figma's online whiteboard for brainstorming, diagramming, and workshops.",
                 "url": "https://www.figma.com/figjam/",
+                "badges": [],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "Miro",
-                "badges": [],
-                "description": "Collaborative visual workspace for teams. Ideal for sprint planning, user journey mapping, retrospectives, and system diagrams with your whole team.",
+                "description": "Collaborative visual workspace for teams. Ideal for sprint planning, user journey mapping.",
                 "url": "https://miro.com/",
+                "badges": [],
                 "tags": [
                     "Design Tools"
                 ]
@@ -784,29 +763,29 @@ const database = {
         "items": [
             {
                 "name": "GSAP",
-                "badges": [],
-                "description": "Industry-standard JavaScript animation library. Blazing fast, works everywhere, and handles complex timeline-based animations with ease.",
+                "description": "Industry-standard JavaScript animation library. Blazing fast, works everywhere.",
                 "url": "https://gsap.com/",
+                "badges": [],
                 "tags": [
                     "Animation"
                 ]
             },
             {
                 "name": "Lottie",
-                "badges": [],
-                "description": "Render Adobe After Effects animations natively on web, iOS, and Android. Ship beautiful animations exported as lightweight JSON files.",
+                "description": "Render Adobe After Effects animations natively on web, iOS, and Android.",
                 "url": "https://lottiefiles.com/",
+                "badges": [],
                 "tags": [
                     "Animation"
                 ]
             },
             {
                 "name": "Motion",
+                "description": "The animation library for React. Formerly Framer Motion.",
+                "url": "https://motion.dev/",
                 "badges": [
                     "NEW"
                 ],
-                "description": "The animation library for React. Formerly Framer Motion \u2014 production-ready animations with a simple declarative API, gestures, layout animations, and scroll effects.",
-                "url": "https://motion.dev/",
                 "tags": [
                     "Animation"
                 ]
@@ -819,9 +798,9 @@ const database = {
         "items": [
             {
                 "name": "Flat UI Colors",
-                "badges": [],
-                "description": "Curated flat color palettes from designers around the world. Simple, beautiful, and ready to copy as hex, RGB, or CSS variables.",
+                "description": "Curated flat color palettes from designers around the world.",
                 "url": "https://flatuicolors.com/",
+                "badges": [],
                 "tags": [
                     "Colors"
                 ]
@@ -834,9 +813,9 @@ const database = {
         "items": [
             {
                 "name": "Ionicons",
-                "badges": [],
-                "description": "Premium open-source icon set by Ionic. 1,300+ icons with outline, filled, and sharp variants. Works in React, Vue, Angular, and plain HTML.",
+                "description": "Premium open-source icon set by Ionic. 1,300+ icons with outline, filled, and sharp variants.",
                 "url": "https://ionic.io/ionicons",
+                "badges": [],
                 "tags": [
                     "Icons"
                 ]
@@ -849,18 +828,18 @@ const database = {
         "items": [
             {
                 "name": "Notion",
-                "badges": [],
-                "description": "All-in-one workspace for notes, docs, wikis, and project management. Great for team knowledge bases, project planning, and personal organization.",
+                "description": "All-in-one workspace for notes, docs, wikis, and project management.",
                 "url": "https://www.notion.com/",
+                "badges": [],
                 "tags": [
                     "Note Taking"
                 ]
             },
             {
                 "name": "Microsoft Loop",
+                "description": "Microsoft's collaborative workspace app. Loop components work across Teams, Outlook, and Office.",
+                "url": "https://loop.cloud.microsoft/",
                 "badges": [],
-                "description": "Microsoft's collaborative workspace app. Loop components work across Teams, Outlook, and Office \u2014 keeping everyone in sync with live, portable content blocks.",
-                "url": "https://loop.cloud.microsoft/learn",
                 "tags": [
                     "Note Taking"
                 ]
@@ -873,9 +852,9 @@ const database = {
         "items": [
             {
                 "name": "TickTick",
-                "badges": [],
-                "description": "Task manager and to-do app with calendar view, habits, Pomodoro timer, and smart lists. Great for staying on top of daily work and personal tasks.",
+                "description": "Task manager and to-do app with calendar view, habits, Pomodoro timer, and smart lists.",
                 "url": "https://ticktick.com/",
+                "badges": [],
                 "tags": [
                     "Task Management"
                 ]
