@@ -373,6 +373,7 @@ body {
   position: relative;
   max-height: calc(100vh - 3rem);
   overflow-y: auto;
+      box-shadow: 0 0 10px 7px rgb(255 255 255 / 10%);
 }
 .modal-close {
   position: absolute;
