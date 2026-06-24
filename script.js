@@ -12,7 +12,34 @@ const database = {
                 ],
                 "tags": [
                     "AI Tools"
-                ]
+                ],
+                "popupDetails": {
+                    "overview": "Cursor is an AI-powered code editor built on VS Code. It is designed to speed up day-to-day development with AI assistance, snippet generation, and smarter navigation.",
+                    "sections": [
+                        {
+                            "title": "Models",
+                            "table": {
+                                "headers": ["Model", "When to use"],
+                                "rows": [
+                                    ["claude-sonnet-4.6", "Default for everything — coding, refactoring, debugging"],
+                                    ["claude-opus-4", "Only for genuinely complex tasks: deep architecture decisions, hard bugs"]
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Advice",
+                            "content": "Avoid: Auto — Auto-selects models unpredictably and often generates low-quality or irrelevant code. Stick with Sonnet 4.6 as your default. Opus is slower and expensive — only reach for it when Sonnet is clearly struggling."
+                        },
+                        {
+                            "title": "Project Rules",
+                            "content": "Add a .cursorrules file to your project root. Cursor reads it automatically on every session — great for enforcing conventions without repeating yourself."
+                        },
+                        {
+                            "title": "Tips",
+                            "content": "Use @codebase in chat to search your whole project before asking questions — prevents hallucinated solutions. When Composer makes a mistake, keep iterating in the same thread."
+                        }
+                    ]
+                }
             },
             {
                 "name": "Claude Code",
@@ -889,6 +916,279 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation logic
     const navLinks = document.querySelectorAll('.nav-link');
     const contentArea = document.getElementById('content-area');
+    const modalOverlay = document.getElementById('resource-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalDetails = document.getElementById('modal-details');
+    const modalBadges = document.getElementById('modal-badges');
+    const modalPrimaryAction = document.getElementById('modal-primary-action');
+    const modalCloseBtn = document.getElementById('modal-close');
+
+    function buildResourceCard(item) {
+        const linkUrl = item.linkUrl || item.url || '#';
+        return `
+            <div class="resource-card" role="button" tabindex="0"
+              data-name="${item.name}"
+              data-description="${item.description}"
+              data-link="${linkUrl}"
+              ${item.pptUrl ? `data-ppt="${item.pptUrl}"` : ''}
+              ${item.docUrl ? `data-doc="${item.docUrl}"` : ''}
+            >
+                <div class="resource-header">
+                    <div class="resource-brand">
+                        <div class="resource-logo">${item.name.charAt(0)}</div>
+                        <div class="resource-title">${item.name}</div>
+                    </div>
+                    ${item.badges.length > 0 ? `
+                        <div class="resource-badges">
+                            ${item.badges.map(b => `<span class="badge-${b.toLowerCase()}">${b}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+                <p class="resource-desc">${item.description}</p>
+                <div class="resource-footer">
+                    ${item.tags.map(t => `<span class="resource-tag">${t}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // Returns both the item and its category key so popups can vary by category
+    function findResourceEntry(name) {
+        for (const key in database) {
+            const match = database[key].items.find(item => item.name === name);
+            if (match) {
+                return { item: match, category: key };
+            }
+        }
+        return null;
+    }
+
+    // primary default details (Models are injected per-category later)
+
+    function createDefaultPopupDetails(resource) {
+        return {
+            overview: resource.description,
+            sections: [
+                {
+                    title: 'Project Rules',
+                    html: `Add a <code>.rules</code> file to your project root. Many tools read it automatically each session — great for enforcing conventions without repeating yourself.`
+                },
+                {
+                    title: 'Key Shortcuts',
+                    html: `<ul class="detail-list"><li><strong>Ctrl+B</strong> — toggle file explorer</li><li><strong>Ctrl+Alt+B</strong> — toggle AI agents panel</li></ul>`
+                },
+                {
+                    title: 'Tips',
+                    html: `<ul class="detail-list"><li>Use <code>@codebase</code> in chat to search your whole project before asking questions.</li><li>When Composer makes a mistake, keep iterating in the same thread.</li><li>Short, specific prompts beat long explanations.</li><li>Review the diff before accepting, especially on config files.</li></ul>`
+                }
+            ]
+        };
+    }
+
+    // Category-specific Models configuration (shows in the top of the details)
+    const categoryModels = {
+        'ai-tools': {
+            headers: ['Model', 'When to use'],
+            rows: [
+                ['claude-sonnet-4.6', 'Default for everything — coding, refactoring, debugging'],
+                ['claude-opus-4', 'Only for genuinely complex tasks: deep architecture decisions, hard bugs'],
+                ['Avoid: Auto', 'Auto-selects models unpredictably and often generates low-quality or irrelevant code']
+            ]
+        },
+        'frameworks-agents': {
+            headers: ['Model', 'When to use'],
+            rows: [
+                ['claude-sonnet-4.6', 'Good default for prototyping and integration work'],
+                ['claude-opus-4', 'Reach for Opus for large-scale architecture or complex orchestration logic'],
+                ['Avoid: Auto', 'Auto-selection can be unpredictable for multi-actor workflows']
+            ]
+        },
+        'mcp-tools': {
+            headers: ['Model', 'When to use'],
+            rows: [
+                ['claude-sonnet-4.6', 'Default for queries, schema analysis, and data summaries'],
+                ['claude-opus-4', 'For deep data reasoning and cross-dataset joins']
+            ]
+        },
+        'data-analytics': {
+            headers: ['Model', 'When to use'],
+            rows: [
+                ['claude-sonnet-4.6', 'Default for data summaries and transformations'],
+                ['claude-opus-4', 'For complex statistical reasoning or causal analysis']
+            ]
+        },
+        'default': {
+            headers: ['Model', 'When to use'],
+            rows: [
+                ['claude-sonnet-4.6', 'Default for general usage'],
+                ['claude-opus-4', 'Use for especially difficult reasoning tasks']
+            ]
+        }
+    };
+
+    // Merge resource custom popup details with defaults and inject category models
+    function getResourcePopupDetails(resource, category) {
+        const defaultDetails = createDefaultPopupDetails(resource);
+        const models = categoryModels[category] || categoryModels['default'];
+
+        const custom = resource?.popupDetails || {};
+        const customSections = custom.sections || [];
+
+        // Ensure Models section appears first, prefer custom if provided
+        const hasModelsInCustom = customSections.some(s => s.title && s.title.toLowerCase().trim() === 'models');
+        const mergedSections = [];
+        if (hasModelsInCustom) {
+            mergedSections.push(...customSections);
+        } else {
+            mergedSections.push({ title: 'Models', table: models });
+            mergedSections.push(...customSections);
+        }
+
+        // Append any default sections that aren't present in custom
+        const presentTitles = mergedSections.map(s => s.title);
+        for (const def of defaultDetails.sections) {
+            if (!presentTitles.includes(def.title)) mergedSections.push(def);
+        }
+
+        return {
+            overview: custom.overview || defaultDetails.overview,
+            sections: mergedSections
+        };
+    }
+    function renderPopupDetails(details, defaultDescription) {
+        const overviewHtml = details?.overview
+            ? `<p class="detail-overview">${details.overview}</p>`
+            : `<p class="detail-overview">${defaultDescription}</p>`;
+
+        const sections = details?.sections?.filter(section =>
+            section.title.toLowerCase().trim() !== 'documentation & best practices'
+        ) || [];
+
+        const sectionsHtml = sections.map(section => {
+            if (section.table) {
+                const headerRow = section.table.headers
+                    .map(header => `<th>${header}</th>`)
+                    .join('');
+                const rowHtml = section.table.rows
+                    .map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`)
+                    .join('');
+
+                return `
+                    <div class="detail-section">
+                        <div class="detail-section-title">${section.title}</div>
+                        <div class="detail-table-wrapper">
+                            <table class="detail-table">
+                                <thead><tr>${headerRow}</tr></thead>
+                                <tbody>${rowHtml}</tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="detail-section">
+                    <div class="detail-section-title">${section.title}</div>
+                    <div class="detail-section-content">${section.html || `<p>${section.content}</p>`}</div>
+                </div>
+            `;
+        }).join('');
+
+        return `
+            <div class="detail-heading">Documentation & Best Practices</div>
+            ${overviewHtml}
+            ${sectionsHtml}
+        `;
+    }
+
+    function openResourceModal(cardElement) {
+        const title = cardElement.dataset.name || 'Resource details';
+        const description = cardElement.dataset.description || 'Choose a resource option below.';
+        const actions = [];
+
+        if (cardElement.dataset.ppt) {
+            actions.push({ label: 'PPT', url: cardElement.dataset.ppt });
+        }
+        if (cardElement.dataset.doc) {
+            actions.push({ label: 'DOC', url: cardElement.dataset.doc });
+        }
+        if (cardElement.dataset.link) {
+            actions.push({ label: 'Link', url: cardElement.dataset.link });
+        }
+
+        const resourceEntry = findResourceEntry(title);
+        const resource = resourceEntry?.item;
+        const category = resourceEntry?.category || 'default';
+        const popupDetails = resource
+            ? getResourcePopupDetails(resource, category)
+            : getResourcePopupDetails({ description }, 'default');
+
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        document.getElementById('modal-logo').textContent = title.charAt(0);
+        modalBadges.innerHTML = resource?.badges?.map(b => `<span class="badge-${b.toLowerCase()}">${b}</span>`).join('') || '';
+        modalDetails.innerHTML = renderPopupDetails(popupDetails, description);
+
+        if (actions.length > 0) {
+            const primary = actions[0];
+            modalPrimaryAction.dataset.actionUrl = primary.url;
+            modalPrimaryAction.textContent = primary.label === 'Link' ? 'Visit' : primary.label;
+            modalPrimaryAction.classList.remove('hidden');
+        } else {
+            modalPrimaryAction.dataset.actionUrl = '#';
+            modalPrimaryAction.classList.add('hidden');
+        }
+
+        modalOverlay.style.display = 'grid';
+        modalOverlay.classList.remove('hidden');
+    }
+
+    function closeResourceModal() {
+        modalOverlay.classList.add('hidden');
+        modalPrimaryAction.dataset.actionUrl = '#';
+        modalPrimaryAction.classList.add('hidden');
+    }
+
+    modalOverlay.addEventListener('transitionend', (event) => {
+        if (event.target === modalOverlay && modalOverlay.classList.contains('hidden')) {
+            modalDetails.innerHTML = '';
+        }
+    });
+
+    contentArea.addEventListener('click', (event) => {
+        const card = event.target.closest('.resource-card');
+        if (card) {
+            openResourceModal(card);
+        }
+    });
+
+    contentArea.addEventListener('keydown', (event) => {
+        const card = event.target.closest('.resource-card');
+        if (card && (event.key === 'Enter' || event.key === ' ')) {
+            event.preventDefault();
+            openResourceModal(card);
+        }
+    });
+
+    modalCloseBtn.addEventListener('click', closeResourceModal);
+    modalOverlay.addEventListener('click', (event) => {
+        if (event.target === modalOverlay) {
+            closeResourceModal();
+        }
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modalOverlay.classList.contains('hidden')) {
+            closeResourceModal();
+        }
+    });
+
+    modalPrimaryAction.addEventListener('click', () => {
+        const url = modalPrimaryAction.dataset.actionUrl;
+        if (url && url !== '#') {
+            window.open(url, '_blank', 'noopener');
+        }
+    });
 
     function renderCategory(categoryId, categoryName, countText) {
         let data = database[categoryId];
@@ -915,25 +1215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         
-        let itemsHtml = data.items.map(item => `
-            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="resource-card" style="text-decoration: none; color: inherit;">
-                <div class="resource-header">
-                    <div class="resource-brand">
-                        <div class="resource-logo">${item.name.charAt(0)}</div>
-                        <div class="resource-title">${item.name}</div>
-                    </div>
-                    ${item.badges.length > 0 ? `
-                        <div class="resource-badges">
-                            ${item.badges.map(b => `<span class="badge-${b.toLowerCase()}">${b}</span>`).join('')}
-                        </div>
-                    ` : ''}
-                </div>
-                <p class="resource-desc">${item.description}</p>
-                <div class="resource-footer">
-                    ${item.tags.map(t => `<span class="resource-tag">${t}</span>`).join('')}
-                </div>
-            </a>
-        `).join('');
+        let itemsHtml = data.items.map(item => buildResourceCard(item)).join('');
 
         contentArea.innerHTML = `
             <header class="page-header">
@@ -987,25 +1269,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('page-subtitle').textContent = `${filteredItems.length} resources`;
             document.getElementById('section-subtitle').textContent = `${filteredItems.length} resources`;
 
-            document.getElementById('resources-grid').innerHTML = filteredItems.map(item => `
-                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="resource-card" style="text-decoration: none; color: inherit;">
-                    <div class="resource-header">
-                        <div class="resource-brand">
-                            <div class="resource-logo">${item.name.charAt(0)}</div>
-                            <div class="resource-title">${item.name}</div>
-                        </div>
-                        ${item.badges.length > 0 ? `
-                            <div class="resource-badges">
-                                ${item.badges.map(b => `<span class="badge-${b.toLowerCase()}">${b}</span>`).join('')}
-                            </div>
-                        ` : ''}
-                    </div>
-                    <p class="resource-desc">${item.description}</p>
-                    <div class="resource-footer">
-                        ${item.tags.map(t => `<span class="resource-tag">${t}</span>`).join('')}
-                    </div>
-                </a>
-            `).join('');
+            document.getElementById('resources-grid').innerHTML = filteredItems.map(item => buildResourceCard(item)).join('');
         });
     }
 

@@ -59,8 +59,7 @@
       <main class="main-layout">
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
-          <a
-            href="#all"
+          <a href="#all"
             data-category="all"
             class="nav-link"
             style="margin-bottom: 1.5rem"
@@ -234,6 +233,32 @@
           <!-- Content will be injected here by script.js -->
         </section>
       </main>
+    </div>
+
+    <div class="modal-overlay hidden" id="resource-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-panel">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close resource details">×</button>
+        <div class="modal-summary">
+          <div class="modal-summary-info">
+            <div class="resource-logo" id="modal-logo">C</div>
+            <div class="modal-summary-text">
+              <div class="modal-title-row">
+                <h2 id="modal-title">Resource details</h2>
+                <div class="modal-badges" id="modal-badges"></div>
+              </div>
+             
+            </div>
+            
+          </div>
+<div class="f-row">
+           <p class="modal-resource-subtitle" id="modal-description">Choose a resource option below.</p>
+          <button type="button" class="resource-action-btn resource-action-primary" id="modal-primary-action" data-action-url="#">
+            Visit
+          </button>
+</div>
+        </div>
+        <div class="modal-details" id="modal-details"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
