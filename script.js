@@ -895,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         document.documentElement.setAttribute('data-theme', 'dark');
     } else {
@@ -1192,7 +1192,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderCategory(categoryId, categoryName, countText) {
         let data = database[categoryId];
-        
+
         // Fallback for "All Resources" or missing categories
         if (!data) {
             if (categoryId === 'all') {
@@ -1214,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         }
-        
+
         let itemsHtml = data.items.map(item => buildResourceCard(item)).join('');
 
         contentArea.innerHTML = `
@@ -1245,7 +1245,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchInput = document.getElementById('search-input');
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            
+
             const allItems = [];
             for (const key in database) {
                 allItems.push(...database[key].items);
@@ -1257,8 +1257,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('page-title').textContent = data.title;
                 document.getElementById('section-title').textContent = data.sectionTitle;
             } else {
-                filteredItems = allItems.filter(item => 
-                    item.name.toLowerCase().includes(query) || 
+                filteredItems = allItems.filter(item =>
+                    item.name.toLowerCase().includes(query) ||
                     item.description.toLowerCase().includes(query) ||
                     item.tags.some(tag => tag.toLowerCase().includes(query))
                 );
@@ -1276,14 +1276,14 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            
+
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
 
             const categoryId = link.getAttribute('data-category');
             let categoryName = "Resources";
             let countText = "0";
-            
+
             if (link.querySelector('span:first-child')) {
                 categoryName = link.querySelector('span:first-child').textContent;
                 countText = link.querySelector('.badge').textContent;

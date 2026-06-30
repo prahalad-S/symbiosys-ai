@@ -1,4 +1,4 @@
-export const database = {
+﻿const database = {
     "ai-tools": {
         "title": "AI Tools",
         "sectionTitle": "AI Tools",
@@ -54,7 +54,9 @@ export const database = {
                 "name": "Claude Code",
                 "description": "Anthropic's command-line tool for Claude. Exceptional at complex reasoning, reading large codebases, and architectural discussions.",
                 "url": "https://claude.ai/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
@@ -73,7 +75,7 @@ export const database = {
             {
                 "name": "Antigravity",
                 "description": "Google DeepMind's advanced agentic AI coding assistant.",
-                "url": "https://antigravity.google/",
+                "url": "#",
                 "badges": [
                     "NEW"
                 ],
@@ -85,7 +87,9 @@ export const database = {
                 "name": "Visual Studio Code",
                 "description": "Microsoft's lightweight but powerful source code editor, extensible via thousands of plugins including AI assistants.",
                 "url": "https://code.visualstudio.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
@@ -94,7 +98,9 @@ export const database = {
                 "name": "GitHub Copilot",
                 "description": "The single biggest gap; most-adopted AI assistant and Microsoft-native.",
                 "url": "https://github.com/features/copilot",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
@@ -112,7 +118,7 @@ export const database = {
             },
             {
                 "name": "OpenAI Codex",
-                "description": "An AI system that translates natural language to code, powering popular coding assistants.",
+                "description": "Terminal coding agent.",
                 "url": "https://openai.com/",
                 "badges": [
                     "NEW"
@@ -123,72 +129,88 @@ export const database = {
             },
             {
                 "name": "Gemini CLI",
-                "description": "A command-line interface for interacting with Google's Gemini models directly from your terminal.",
+                "description": "Terminal coding agent.",
                 "url": "https://gemini.google.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Cline",
-                "description": "An autonomous coding agent that works within VS Code to plan, write, and debug code iteratively.",
-                "url": "https://github.com/cline/cline",
-                "badges": [],
+                "description": "Editor/agent/app-builder.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Aider",
-                "description": "An AI pair programming tool in your terminal that lets you edit code by chatting with LLMs.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://aider.chat/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Zed",
-                "description": "A high-performance, multiplayer code editor designed for extreme responsiveness and built-in AI.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://zed.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Bolt.new",
-                "description": "An AI-powered web development platform for instantly building, running, and deploying full-stack applications in the browser.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://bolt.new/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "v0 (Vercel)",
-                "description": "A generative UI system by Vercel that converts natural language prompts into React components.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://v0.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Replit Agent",
-                "description": "An autonomous builder within Replit that can scaffold, write, and deploy applications from scratch.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://replit.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
             },
             {
                 "name": "Devin",
-                "description": "An autonomous AI software engineer capable of handling complex software projects independently.",
+                "description": "Editor/agent/app-builder.",
                 "url": "https://devin.ai/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AI Tools"
                 ]
@@ -214,7 +236,9 @@ export const database = {
                 "name": "LangGraph",
                 "description": "Build stateful, multi-actor applications with LLMs.",
                 "url": "https://www.langchain.com/langgraph",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
@@ -223,7 +247,9 @@ export const database = {
                 "name": "Hugging Face",
                 "description": "The AI community building the future. Build, train and deploy state of the art models powered by the reference open source in machine learning.",
                 "url": "https://huggingface.co/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
@@ -242,8 +268,10 @@ export const database = {
             {
                 "name": "Azure AI Foundry",
                 "description": "Build, evaluate, and deploy generative AI solutions and custom copilots.",
-                "url": "https://ai.azure.com/home",
-                "badges": [],
+                "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-foundry",
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
@@ -261,54 +289,66 @@ export const database = {
             },
             {
                 "name": "LlamaIndex",
-                "description": "A data framework for connecting custom data sources to large language models (LLMs).",
+                "description": "Core RAG / multi-agent framework.",
                 "url": "https://www.llamaindex.ai/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "CrewAI",
-                "description": "A cutting-edge framework for orchestrating role-playing, autonomous AI agents to tackle complex tasks.",
+                "description": "Core RAG / multi-agent framework.",
                 "url": "https://www.crewai.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "OpenAI Agents SDK",
-                "description": "The official toolkit for building, deploying, and managing intelligent AI agents using OpenAI models.",
+                "description": "Modern agent-building option.",
                 "url": "https://platform.openai.com/docs/assistants/overview",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "Pydantic AI",
-                "description": "An agent framework leveraging Pydantic for strong typing, data validation, and robust AI integrations.",
+                "description": "Modern agent-building option.",
                 "url": "https://ai.pydantic.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "Google ADK",
-                "description": "Google's Agent Development Kit provides comprehensive tools to design, build, and deploy custom AI agents.",
+                "description": "Modern agent-building option.",
                 "url": "https://google.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
             },
             {
                 "name": "DSPy",
-                "description": "A framework for algorithmic optimization of language model prompts and weights.",
+                "description": "Modern agent-building option.",
                 "url": "https://dspy.ai/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks & Agents"
                 ]
@@ -334,7 +374,9 @@ export const database = {
                 "name": "Postgres MCP",
                 "description": "An MCP server that allows AI assistants to securely inspect schemas, run queries, and analyze data in PostgreSQL.",
                 "url": "https://github.com/modelcontextprotocol/servers",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -343,7 +385,9 @@ export const database = {
                 "name": "Power BI MCP",
                 "description": "An MCP server for connecting AI assistants to Microsoft Power BI datasets and reports.",
                 "url": "https://github.com/microsoft/powerbi-modeling-mcp",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -352,7 +396,9 @@ export const database = {
                 "name": "GitHub MCP",
                 "description": "An MCP server to interact with GitHub repositories, issues, and pull requests.",
                 "url": "https://github.com/modelcontextprotocol/servers",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -360,8 +406,10 @@ export const database = {
             {
                 "name": "Azure MCP",
                 "description": "An MCP server to interact with Microsoft Azure resources and APIs.",
-                "url": "https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/overview",
-                "badges": [],
+                "url": "https://github.com/modelcontextprotocol/servers",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -379,36 +427,44 @@ export const database = {
             },
             {
                 "name": "Playwright MCP",
-                "description": "MCP server for browser automation via Playwright.",
-                "url": "https://playwright.dev/",
-                "badges": [],
+                "description": "Widely used first-party server.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
             },
             {
                 "name": "Stripe MCP",
-                "description": "MCP server for integrating Stripe payments.",
-                "url": "https://docs.stripe.com/mcp",
-                "badges": [],
+                "description": "Widely used first-party server.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
             },
             {
                 "name": "Notion MCP",
-                "description": "MCP server for Notion integration.",
-                "url": "https://developers.notion.com/guides/mcp/overview",
-                "badges": [],
+                "description": "Widely used first-party server.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
             },
             {
                 "name": "Sentry MCP",
-                "description": "MCP server for Sentry error tracking integration.",
-                "url": "https://sentry.io/welcome/",
-                "badges": [],
+                "description": "Widely used first-party server.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -416,17 +472,21 @@ export const database = {
             {
                 "name": "Context7 MCP",
                 "description": "Live docs server.",
-                "url": "https://context7.com/",
-                "badges": [],
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
             },
             {
                 "name": "Zapier MCP",
-                "description": "Integration server for connecting apps.",
-                "url": "https://zapier.com/",
-                "badges": [],
+                "description": "Integration server.",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -434,8 +494,10 @@ export const database = {
             {
                 "name": "MCP Registry",
                 "description": "An MCP registry/directory entry.",
-                "url": "https://github.com/modelcontextprotocol/registry",
-                "badges": [],
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Mcp Tools"
                 ]
@@ -461,7 +523,9 @@ export const database = {
                 "name": "Cube.dev",
                 "description": "The universal semantic layer for building data apps. Organize data securely and deliver it to any application.",
                 "url": "https://cube.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -470,7 +534,9 @@ export const database = {
                 "name": "Azure AI Search",
                 "description": "An AI-powered information retrieval platform that helps developers build rich search experiences and generative AI apps.",
                 "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-search",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -479,7 +545,9 @@ export const database = {
                 "name": "Power BI",
                 "description": "Interactive data visualization software product developed by Microsoft with primary focus on business intelligence.",
                 "url": "https://powerbi.microsoft.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -488,7 +556,9 @@ export const database = {
                 "name": "Looker",
                 "description": "Enterprise platform for BI, data applications, and embedded analytics developed by Google Cloud.",
                 "url": "https://cloud.google.com/looker",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -497,52 +567,64 @@ export const database = {
                 "name": "dbt",
                 "description": "Transformation layer; near-universal in modern data stacks.",
                 "url": "https://www.getdbt.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
                 "name": "Databricks",
-                "description": "A unified data analytics platform for massive scale data engineering, data science, and machine learning.",
+                "description": "Warehouse/query engine.",
                 "url": "https://www.databricks.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
                 "name": "Snowflake",
-                "description": "A cloud computing-based data cloud company offering data storage, processing, and analytic solutions.",
+                "description": "Warehouse/query engine.",
                 "url": "https://www.snowflake.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
                 "name": "BigQuery",
-                "description": "A fully managed, serverless, and highly scalable enterprise data warehouse with built-in machine learning.",
+                "description": "Warehouse/query engine.",
                 "url": "https://cloud.google.com/bigquery",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
                 "name": "DuckDB",
-                "description": "An in-process SQL OLAP database management system for fast analytical queries.",
+                "description": "Warehouse/query engine.",
                 "url": "https://duckdb.org/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
             },
             {
                 "name": "Metabase",
-                "description": "The easy, open-source way for everyone in your company to ask questions and learn from data.",
+                "description": "Warehouse/query engine.",
                 "url": "https://www.metabase.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Data & Analytics"
                 ]
@@ -557,7 +639,9 @@ export const database = {
                 "name": "Microsoft Clarity",
                 "description": "A free user behavior analytics tool that helps you understand how users are interacting with your website through session replays and heatmaps.",
                 "url": "https://clarity.microsoft.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
@@ -577,7 +661,9 @@ export const database = {
                 "name": "Google Tag Manager",
                 "description": "A tag management system that allows you to quickly and easily update measurement codes and related code fragments collectively known as tags on your website or mobile app.",
                 "url": "https://tagmanager.google.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
@@ -586,34 +672,42 @@ export const database = {
                 "name": "PostHog",
                 "description": "Product analytics + session replay.",
                 "url": "https://posthog.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
             },
             {
                 "name": "Plausible",
-                "description": "Lightweight and open-source web analytics.",
+                "description": "Web Analytics",
                 "url": "https://plausible.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
             },
             {
                 "name": "Vercel Analytics",
-                "description": "Privacy-friendly analytics for Vercel deployments.",
+                "description": "Web Analytics",
                 "url": "https://vercel.com/analytics",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
             },
             {
                 "name": "Umami",
-                "description": "Simple, fast, website analytics alternative to Google Analytics.",
+                "description": "Web Analytics",
                 "url": "https://umami.is/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Analytics"
                 ]
@@ -628,7 +722,9 @@ export const database = {
                 "name": "n8n",
                 "description": "A free and open workflow automation tool. Easily build complex automations and connect anything to everything.",
                 "url": "https://n8n.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -648,7 +744,9 @@ export const database = {
                 "name": "Firebase",
                 "description": "Google's mobile platform that helps you quickly develop high-quality apps and grow your business.",
                 "url": "https://firebase.google.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -657,7 +755,9 @@ export const database = {
                 "name": "Neon",
                 "description": "Serverless Postgres.",
                 "url": "https://neon.tech/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -666,7 +766,9 @@ export const database = {
                 "name": "Convex",
                 "description": "Backend as a service.",
                 "url": "https://www.convex.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -675,7 +777,9 @@ export const database = {
                 "name": "Trigger.dev",
                 "description": "Background jobs.",
                 "url": "https://trigger.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -684,7 +788,9 @@ export const database = {
                 "name": "Inngest",
                 "description": "Background jobs.",
                 "url": "https://www.inngest.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -693,7 +799,9 @@ export const database = {
                 "name": "Upstash",
                 "description": "Serverless Redis.",
                 "url": "https://upstash.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -702,7 +810,9 @@ export const database = {
                 "name": "Hono",
                 "description": "Backend framework.",
                 "url": "https://hono.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -711,7 +821,9 @@ export const database = {
                 "name": "Appwrite",
                 "description": "Backend as a service.",
                 "url": "https://appwrite.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Backend & Infra"
                 ]
@@ -748,7 +860,9 @@ export const database = {
                 "name": "Cloudflare",
                 "description": "Global network designed to make everything you connect to the Internet secure, private, fast, and reliable.",
                 "url": "https://www.cloudflare.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
@@ -757,43 +871,53 @@ export const database = {
                 "name": "Namecheap",
                 "description": "Domain registrar and web hosting company. Provides domain registration, DNS management, SSL certificates, and affordable hosting options.",
                 "url": "https://www.namecheap.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Netlify",
-                "description": "The modern web development platform for building faster and scaling securely without the pain of complex infrastructure.",
+                "description": "Hosting & Domains.",
                 "url": "https://www.netlify.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Fly.io",
-                "description": "A platform for running full stack apps and databases close to your users around the world.",
+                "description": "Hosting & Domains.",
                 "url": "https://fly.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Render",
-                "description": "A unified cloud to build and run all your apps and websites with free TLS certificates and auto-deploys.",
+                "description": "Hosting & Domains.",
                 "url": "https://render.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
             },
             {
                 "name": "Azure Static Web Apps",
-                "description": "A service that automatically builds and deploys full stack web apps to Azure from a code repository.",
+                "description": "Hosting & Domains.",
                 "url": "https://azure.microsoft.com/en-us/products/app-service/static",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Hosting & Domains"
                 ]
@@ -819,7 +943,9 @@ export const database = {
                 "name": "Apify",
                 "description": "A platform for web scraping and data extraction. Easily create web scrapers to extract data from any website.",
                 "url": "https://apify.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Scraping"
                 ]
@@ -837,18 +963,22 @@ export const database = {
             },
             {
                 "name": "Crawl4AI",
-                "description": "Open-source LLM friendly web crawler & scraper.",
-                "url": "https://crawl4ai.com/",
-                "badges": [],
+                "description": "Web Scraping",
+                "url": "#",
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Scraping"
                 ]
             },
             {
                 "name": "Bright Data",
-                "description": "World's leading web data platform.",
+                "description": "Web Scraping",
                 "url": "https://brightdata.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Scraping"
                 ]
@@ -863,7 +993,9 @@ export const database = {
                 "name": "Frappe / ERPNext",
                 "description": "Free and open-source integrated Enterprise Resource Planning (ERP) software. Built on the Frappe framework.",
                 "url": "https://erpnext.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
@@ -881,36 +1013,44 @@ export const database = {
             },
             {
                 "name": "Microsoft Dynamics 365",
-                "description": "A suite of intelligent business applications that helps you run your entire business and deliver greater results.",
+                "description": "ERP & Business.",
                 "url": "https://dynamics.microsoft.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
             },
             {
                 "name": "NetSuite",
-                "description": "A unified business management suite, encompassing ERP/Financials, CRM, and ecommerce.",
+                "description": "ERP & Business.",
                 "url": "https://www.netsuite.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
             },
             {
                 "name": "HubSpot",
-                "description": "A comprehensive CRM platform with software and support to help businesses grow better.",
+                "description": "ERP & Business.",
                 "url": "https://www.hubspot.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
             },
             {
                 "name": "Salesforce",
-                "description": "The world's #1 customer relationship management (CRM) platform to connect with your customers.",
+                "description": "ERP & Business.",
                 "url": "https://www.salesforce.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "ERP & Business"
                 ]
@@ -936,43 +1076,53 @@ export const database = {
                 "name": "Razorpay",
                 "description": "Strong for India; standard alongside Stripe.",
                 "url": "https://razorpay.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Payments"
                 ]
             },
             {
                 "name": "Paddle",
-                "description": "Complete payments, tax, and subscriptions solution for SaaS.",
+                "description": "Payments",
                 "url": "https://www.paddle.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Payments"
                 ]
             },
             {
                 "name": "Lemon Squeezy",
-                "description": "Payments, tax, and subscriptions for software companies.",
+                "description": "Payments",
                 "url": "https://www.lemonsqueezy.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Payments"
                 ]
             },
             {
                 "name": "PayPal",
-                "description": "Global online payment system.",
+                "description": "Payments",
                 "url": "https://www.paypal.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Payments"
                 ]
             },
             {
                 "name": "Polar",
-                "description": "Funding and monetization for open source developers.",
+                "description": "Payments",
                 "url": "https://polar.sh/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Payments"
                 ]
@@ -998,7 +1148,9 @@ export const database = {
                 "name": "Azure Key Vault",
                 "description": "Cloud service for securely storing and accessing secrets, keys, and certificates.",
                 "url": "https://azure.microsoft.com/en-us/products/key-vault",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1007,7 +1159,9 @@ export const database = {
                 "name": "Azure Data Factory",
                 "description": "Cloud-based data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.",
                 "url": "https://azure.microsoft.com/en-us/products/data-factory",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1016,7 +1170,9 @@ export const database = {
                 "name": "Azure API Management",
                 "description": "A hybrid, multicloud management platform for APIs across all environments.",
                 "url": "https://azure.microsoft.com/en-us/products/api-management",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1025,25 +1181,31 @@ export const database = {
                 "name": "Microsoft Entra External ID",
                 "description": "A highly customizable customer identity and access management (CIAM) solution.",
                 "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-external-id",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
             },
             {
                 "name": "Azure Functions",
-                "description": "Serverless compute service on Azure.",
+                "description": "Azure",
                 "url": "https://azure.microsoft.com/en-us/products/functions",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
             },
             {
                 "name": "Azure Container Apps",
-                "description": "Serverless platform for building and deploying microservices.",
+                "description": "Azure",
                 "url": "https://azure.microsoft.com/en-us/products/container-apps",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1052,25 +1214,31 @@ export const database = {
                 "name": "Azure OpenAI",
                 "description": "Azure AI Services",
                 "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
             },
             {
                 "name": "Azure Cosmos DB",
-                "description": "Fully managed NoSQL database for modern app development.",
+                "description": "Azure",
                 "url": "https://azure.microsoft.com/en-us/products/cosmos-db",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
             },
             {
                 "name": "Azure Blob Storage",
-                "description": "Massively scalable and secure object storage.",
+                "description": "Azure",
                 "url": "https://azure.microsoft.com/en-us/products/storage/blobs",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1079,7 +1247,9 @@ export const database = {
                 "name": "AKS",
                 "description": "Azure Kubernetes Service",
                 "url": "https://azure.microsoft.com/en-us/products/kubernetes-service",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Azure"
                 ]
@@ -1105,7 +1275,9 @@ export const database = {
                 "name": "AWS Lambda",
                 "description": "Run code without thinking about servers or clusters.",
                 "url": "https://aws.amazon.com/lambda/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
@@ -1114,7 +1286,9 @@ export const database = {
                 "name": "AWS S3",
                 "description": "Object storage built to retrieve any amount of data from anywhere.",
                 "url": "https://aws.amazon.com/s3/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
@@ -1123,7 +1297,9 @@ export const database = {
                 "name": "AWS Glue",
                 "description": "A serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.",
                 "url": "https://aws.amazon.com/glue/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
@@ -1132,7 +1308,9 @@ export const database = {
                 "name": "AWS Athena",
                 "description": "A serverless, interactive analytics service to query data and analyze big data in Amazon S3 using standard SQL.",
                 "url": "https://aws.amazon.com/athena/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
@@ -1141,70 +1319,86 @@ export const database = {
                 "name": "AWS Bedrock",
                 "description": "GenAI",
                 "url": "https://aws.amazon.com/bedrock/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "DynamoDB",
-                "description": "Fast, flexible NoSQL database service for any scale.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/dynamodb/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "RDS",
-                "description": "Managed relational database service on AWS.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/rds/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "ECS/Fargate",
-                "description": "Highly secure, reliable, and scalable container execution.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/ecs/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "API Gateway",
-                "description": "Fully managed service for creating and managing APIs.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/api-gateway/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "CloudFront",
-                "description": "Secure and highly programmable content delivery network.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/cloudfront/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "Cognito",
-                "description": "Simple and secure user sign-up, sign-in, and access control.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/cognito/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
             },
             {
                 "name": "SQS/SNS",
-                "description": "Fully managed pub/sub messaging and message queuing services.",
+                "description": "AWS",
                 "url": "https://aws.amazon.com/sns/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "AWS"
                 ]
@@ -1241,43 +1435,53 @@ export const database = {
                 "name": "Flutter",
                 "description": "Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices.",
                 "url": "https://flutter.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks"
                 ]
             },
             {
                 "name": "SwiftUI",
-                "description": "Apple's modern UI framework for building beautiful, dynamic apps across all Apple platforms.",
-                "url": "https://developer.apple.com/swiftui/",
-                "badges": [],
+                "description": "Mobile Frameworks",
+                "url": "https://developer.apple.com/xcode/swiftui/",
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks"
                 ]
             },
             {
                 "name": "Kotlin / Jetpack Compose",
-                "description": "Android's recommended modern toolkit for building native user interfaces.",
+                "description": "Mobile Frameworks",
                 "url": "https://developer.android.com/compose",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks"
                 ]
             },
             {
                 "name": "Capacitor",
-                "description": "A cross-platform native runtime that lets web developers build native iOS, Android, and PWAs.",
+                "description": "Mobile Frameworks",
                 "url": "https://capacitorjs.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks"
                 ]
             },
             {
                 "name": "Ionic",
-                "description": "An open source mobile UI toolkit for building high quality, cross-platform native and web apps.",
+                "description": "Mobile Frameworks",
                 "url": "https://ionicframework.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Frameworks"
                 ]
@@ -1303,7 +1507,9 @@ export const database = {
                 "name": "TestFlight",
                 "description": "Apple's official platform for distributing iOS beta builds to testers.",
                 "url": "https://developer.apple.com/testflight/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
@@ -1312,7 +1518,9 @@ export const database = {
                 "name": "Firebase App Distribution",
                 "description": "Distribute pre-release iOS and Android builds to testers in seconds.",
                 "url": "https://firebase.google.com/products/app-distribution",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
@@ -1321,34 +1529,42 @@ export const database = {
                 "name": "Google Play",
                 "description": "Android app distribution via the Play Store. Internal/closed/open testing tracks.",
                 "url": "https://play.google.com/console/signup",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "GitHub Actions",
-                "description": "Automate, customize, and execute your software development workflows right in your repository.",
+                "description": "CI/CD",
                 "url": "https://github.com/features/actions",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "Azure Pipelines",
-                "description": "Build, test, and deploy with CI/CD that works with any language, platform, and cloud.",
+                "description": "CI/CD",
                 "url": "https://azure.microsoft.com/en-us/products/devops/pipelines",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
             },
             {
                 "name": "GitLab CI",
-                "description": "A continuous integration and continuous deployment tool built directly into the GitLab platform.",
+                "description": "CI/CD",
                 "url": "https://docs.gitlab.com/ee/ci/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "CI/CD & Distribution"
                 ]
@@ -1374,25 +1590,31 @@ export const database = {
                 "name": "Azure DevOps",
                 "description": "Microsoft's DevOps platform with Repos (Git), Pipelines (CI/CD), Boards (work tracking), and Artifacts.",
                 "url": "https://azure.microsoft.com/en-gb/products/devops/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Source Control"
                 ]
             },
             {
                 "name": "GitLab",
-                "description": "Complete DevOps platform delivered as a single application.",
+                "description": "Source Control",
                 "url": "https://about.gitlab.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Source Control"
                 ]
             },
             {
                 "name": "Bitbucket",
-                "description": "Git code management built for professional teams.",
+                "description": "Source Control",
                 "url": "https://bitbucket.org/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Source Control"
                 ]
@@ -1407,7 +1629,9 @@ export const database = {
                 "name": "Terraform",
                 "description": "Industry-standard IaC tool by HashiCorp. Provision and manage cloud infrastructure across AWS, Azure, GCP.",
                 "url": "https://developer.hashicorp.com/terraform",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Infrastructure as Code"
                 ]
@@ -1416,7 +1640,9 @@ export const database = {
                 "name": "Azure Bicep",
                 "description": "Microsoft's DSL for deploying Azure resources. A cleaner alternative to ARM templates.",
                 "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Infrastructure as Code"
                 ]
@@ -1434,27 +1660,33 @@ export const database = {
             },
             {
                 "name": "Pulumi",
-                "description": "Infrastructure as code in any programming language.",
+                "description": "Infrastructure as Code",
                 "url": "https://www.pulumi.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Infrastructure as Code"
                 ]
             },
             {
                 "name": "OpenTofu",
-                "description": "Open-source alternative to Terraform for infrastructure as code.",
+                "description": "Infrastructure as Code",
                 "url": "https://opentofu.org/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Infrastructure as Code"
                 ]
             },
             {
                 "name": "Ansible",
-                "description": "Radically simple IT automation system.",
+                "description": "Infrastructure as Code",
                 "url": "https://www.ansible.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Infrastructure as Code"
                 ]
@@ -1478,54 +1710,66 @@ export const database = {
             },
             {
                 "name": "Vitest",
-                "description": "Blazing fast unit test framework powered by Vite.",
+                "description": "Testing",
                 "url": "https://vitest.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
             },
             {
                 "name": "Jest",
-                "description": "Delightful JavaScript Testing Framework with a focus on simplicity.",
+                "description": "Testing",
                 "url": "https://jestjs.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
             },
             {
                 "name": "Cypress",
-                "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+                "description": "Testing",
                 "url": "https://www.cypress.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
             },
             {
                 "name": "Testing Library",
-                "description": "Simple and complete testing utilities that encourage good testing practices.",
+                "description": "Testing",
                 "url": "https://testing-library.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
             },
             {
                 "name": "Postman",
-                "description": "API platform for building and using APIs.",
+                "description": "Testing",
                 "url": "https://www.postman.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
             },
             {
                 "name": "k6",
-                "description": "Open-source load testing tool and SaaS for engineering teams.",
+                "description": "Testing",
                 "url": "https://k6.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Testing"
                 ]
@@ -1540,7 +1784,9 @@ export const database = {
                 "name": "Figma",
                 "description": "The standard for UI/UX design. Collaborative, browser-based, and packed with plugins.",
                 "url": "https://www.figma.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
@@ -1549,7 +1795,9 @@ export const database = {
                 "name": "Canva",
                 "description": "Easy-to-use design platform for marketing materials, presentations, social media, and more.",
                 "url": "https://www.canva.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
@@ -1558,7 +1806,9 @@ export const database = {
                 "name": "FigJam",
                 "description": "Figma's online whiteboard for brainstorming, diagramming, and workshops.",
                 "url": "https://www.figma.com/figjam/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
@@ -1567,7 +1817,9 @@ export const database = {
                 "name": "Miro",
                 "description": "Collaborative visual workspace for teams. Ideal for sprint planning, user journey mapping.",
                 "url": "https://miro.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
@@ -1575,35 +1827,43 @@ export const database = {
             {
                 "name": "Stitch",
                 "description": "An advanced AI-driven UI component generator and front-end copilot.",
-                "url": "https://stitch.withgoogle.com/",
-                "badges": [],
+                "url": "https://stitch.dev/",
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "Framer",
-                "description": "Design tool for creating interactive prototypes and websites.",
+                "description": "Design Tools",
                 "url": "https://www.framer.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "Spline",
-                "description": "3D design tool for the web.",
+                "description": "Design Tools",
                 "url": "https://spline.design/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
             },
             {
                 "name": "Penpot",
-                "description": "Open-source design and prototyping platform.",
+                "description": "Design Tools",
                 "url": "https://penpot.app/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Design Tools"
                 ]
@@ -1618,7 +1878,9 @@ export const database = {
                 "name": "GSAP",
                 "description": "Industry-standard JavaScript animation library. Blazing fast, works everywhere.",
                 "url": "https://gsap.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Animation"
                 ]
@@ -1627,7 +1889,9 @@ export const database = {
                 "name": "Lottie",
                 "description": "Render Adobe After Effects animations natively on web, iOS, and Android.",
                 "url": "https://lottiefiles.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Animation"
                 ]
@@ -1645,7 +1909,7 @@ export const database = {
             },
             {
                 "name": "Rive",
-                "description": "Interactive animations for any platform.",
+                "description": "Animation",
                 "url": "https://rive.app/",
                 "badges": [
                     "NEW"
@@ -1656,9 +1920,11 @@ export const database = {
             },
             {
                 "name": "Theatre.js",
-                "description": "Motion design toolset for the web.",
+                "description": "Animation",
                 "url": "https://www.theatrejs.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Animation"
                 ]
@@ -1673,43 +1939,53 @@ export const database = {
                 "name": "Flat UI Colors",
                 "description": "Curated flat color palettes from designers around the world.",
                 "url": "https://flatuicolors.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Colors"
                 ]
             },
             {
                 "name": "Coolors",
-                "description": "Super fast color palettes generator.",
+                "description": "Colors",
                 "url": "https://coolors.co/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Colors"
                 ]
             },
             {
                 "name": "Realtime Colors",
-                "description": "Visualize color palettes on real websites instantly.",
+                "description": "Colors",
                 "url": "https://www.realtimecolors.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Colors"
                 ]
             },
             {
                 "name": "Adobe Color",
-                "description": "Create and explore beautiful color themes.",
+                "description": "Colors",
                 "url": "https://color.adobe.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Colors"
                 ]
             },
             {
                 "name": "Color Hunt",
-                "description": "Free and open platform for color inspiration.",
+                "description": "Colors",
                 "url": "https://colorhunt.co/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Colors"
                 ]
@@ -1724,7 +2000,9 @@ export const database = {
                 "name": "Ionicons",
                 "description": "Premium open-source icon set by Ionic. 1,300+ icons with outline, filled, and sharp variants.",
                 "url": "https://ionic.io/ionicons",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
@@ -1733,43 +2011,53 @@ export const database = {
                 "name": "Lucide",
                 "description": "The modern default.",
                 "url": "https://lucide.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
             },
             {
                 "name": "Heroicons",
-                "description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+                "description": "Icons",
                 "url": "https://heroicons.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
             },
             {
                 "name": "Phosphor",
-                "description": "Flexible icon family for interfaces, diagrams, presentations.",
+                "description": "Icons",
                 "url": "https://phosphoricons.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
             },
             {
                 "name": "Tabler Icons",
-                "description": "Over 4,900 pixel-perfect icons for web design.",
+                "description": "Icons",
                 "url": "https://tabler-icons.io/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
             },
             {
                 "name": "Iconify",
-                "description": "Universal icon framework integrating multiple icon sets.",
+                "description": "Icons",
                 "url": "https://iconify.design/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Icons"
                 ]
@@ -1784,7 +2072,9 @@ export const database = {
                 "name": "Notion",
                 "description": "All-in-one workspace for notes, docs, wikis, and project management.",
                 "url": "https://www.notion.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Note Taking"
                 ]
@@ -1793,25 +2083,31 @@ export const database = {
                 "name": "Microsoft Loop",
                 "description": "Microsoft's collaborative workspace app. Loop components work across Teams, Outlook, and Office.",
                 "url": "https://loop.cloud.microsoft/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Note Taking"
                 ]
             },
             {
                 "name": "Obsidian",
-                "description": "Private and flexible writing app that adapts to the way you think.",
+                "description": "Note Taking",
                 "url": "https://obsidian.md/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Note Taking"
                 ]
             },
             {
                 "name": "OneNote",
-                "description": "Digital note-taking app for your devices.",
+                "description": "Note Taking",
                 "url": "https://www.onenote.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Note Taking"
                 ]
@@ -1826,7 +2122,9 @@ export const database = {
                 "name": "TickTick",
                 "description": "Task manager and to-do app with calendar view, habits, Pomodoro timer, and smart lists.",
                 "url": "https://ticktick.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Task Management"
                 ]
@@ -1835,34 +2133,42 @@ export const database = {
                 "name": "Linear",
                 "description": "Task management dev-team standard.",
                 "url": "https://linear.app/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Task Management"
                 ]
             },
             {
                 "name": "Jira",
-                "description": "Issue and project tracking software.",
+                "description": "Task Management",
                 "url": "https://www.atlassian.com/software/jira",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Task Management"
                 ]
             },
             {
                 "name": "Microsoft Planner / To Do",
-                "description": "Manage tasks and teamwork with Microsoft 365.",
+                "description": "Task Management",
                 "url": "https://planner.cloud.microsoft/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Task Management"
                 ]
             },
             {
                 "name": "Trello",
-                "description": "Visual tool for empowering your team to manage any type of project.",
+                "description": "Task Management",
                 "url": "https://trello.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Task Management"
                 ]
@@ -1897,63 +2203,77 @@ export const database = {
             },
             {
                 "name": "Tailwind CSS",
-                "description": "Utility-first CSS framework for rapid UI development.",
+                "description": "Web Frameworks",
                 "url": "https://tailwindcss.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "shadcn/ui",
-                "description": "Beautifully designed components built with Radix UI and Tailwind CSS.",
+                "description": "Web Frameworks",
                 "url": "https://ui.shadcn.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "Vite",
-                "description": "Next generation frontend tooling.",
+                "description": "Web Frameworks",
                 "url": "https://vitejs.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "Astro",
-                "description": "The web framework that scales with you.",
+                "description": "Web Frameworks",
                 "url": "https://astro.build/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "React Router / Remix",
-                "description": "Full stack web framework that lets you focus on the user interface.",
+                "description": "Web Frameworks",
                 "url": "https://remix.run/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "SvelteKit",
-                "description": "Rapidly developing robust, performant web applications using Svelte.",
+                "description": "Web Frameworks",
                 "url": "https://kit.svelte.dev/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
             },
             {
                 "name": "TanStack",
-                "description": "High-quality open-source software for web developers.",
+                "description": "Web Frameworks",
                 "url": "https://tanstack.com/",
-                "badges": [],
+                "badges": [
+
+                ],
                 "tags": [
                     "Web Frameworks"
                 ]
@@ -1961,3 +2281,16 @@ export const database = {
         ]
     }
 };
+
+
+let issues = [];
+for (const key in database) {
+  const cat = database[key];
+  cat.items.forEach(item => {
+    if (item.url === '#' || item.description === cat.title || item.description === cat.sectionTitle || item.tags.includes(item.description)) {
+      issues.push({ name: item.name, desc: item.description, url: item.url, category: cat.title });
+    }
+  });
+}
+console.log(issues.length + ' issues found.');
+console.log(issues);
