@@ -27,6 +27,14 @@
    * **Badges:** `["NEW"]`
    * **Description:** An open-source autonomous coding agent that runs in your VS Code terminal. Can edit files, run commands, and build entire features using various LLMs.
    * **URL:** [https://cline.bot/](https://cline.bot/)
+8. **Sakana Fugu**
+   * **Badges:** `["NEW"]`
+   * **Description:** Frontier-level performance without single-vendor dependency. Fugu dynamically orchestrates the world's best models to tackle complex, multi-step tasks. Plug collective intelligence directly into your workflows today with a single API.
+   * **URL:** [https://sakana.ai/fugu/](https://sakana.ai/fugu/)
+9. **glm-5.2**
+   * **Badges:** `["NEW"]`
+   * **Description:** Stronger coding capabilities with multiple thinking effort levels (High and Max) to balance performance against latency and compute.
+   * **URL:** [https://ollama.com/library/glm-5.2](https://ollama.com/library/glm-5.2)
 
 ### **Frameworks & Agents (`frameworks-agents`)**
 1. **LangChain**

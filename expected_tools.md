@@ -6,6 +6,8 @@ Lovable
 Stitch
 Antigravity
 Visual Studio Code
+Sakana Fugu
+glm-5.2
 
 2.Frameworks & Agents:
 LangChain

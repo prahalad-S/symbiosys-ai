@@ -192,6 +192,28 @@ export const database = {
                 "tags": [
                     "AI Tools"
                 ]
+            },
+            {
+                "name": "Sakana Fugu",
+                "description": "Frontier-level performance without single-vendor dependency. Fugu dynamically orchestrates the world's best models to tackle complex, multi-step tasks. Plug collective intelligence directly into your workflows today with a single API.",
+                "url": "https://sakana.ai/fugu/",
+                "badges": [
+                    "NEW"
+                ],
+                "tags": [
+                    "AI Tools"
+                ]
+            },
+            {
+                "name": "glm-5.2",
+                "description": "Stronger coding capabilities with multiple thinking effort levels (High and Max) to balance performance against latency and compute.",
+                "url": "https://ollama.com/library/glm-5.2",
+                "badges": [
+                    "NEW"
+                ],
+                "tags": [
+                    "AI Tools"
+                ]
             }
         ]
     },
